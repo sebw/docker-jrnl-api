@@ -13,12 +13,12 @@ docker build  --tag jrnl-api:0.1 .
 Create your container:
 
 ```
-`docker run -d \
+docker run -d \
     -v /your/host/directory:/.local/share/jrnl 
     -v /etc/localtime:/etc/localtime:ro
     -p 5000:5000 
     --name journal
-    jrnl-api:0.1`
+    jrnl-api:0.1
 ```
 
 ## Usage
