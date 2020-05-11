@@ -43,5 +43,6 @@ $ cat /your/host/directory/journal.txt
 
 - limited to posting new entries
 - currently, entries are with the "now" timestamp, it's not possible to add an entry for yesterday
-- no authentication, I leave it to Traefik or similar
+- no TLS, I leave it to Traefik or similar
+- no authentication, ditto
 - journal.txt is on your Docker host, which prevents you from using jrnl CLI if your Docker host is not your workstation (something like sshfs would then be needed)
