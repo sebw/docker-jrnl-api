@@ -42,6 +42,7 @@ $ cat /your/host/directory/journal.txt
 ## Known limitations
 
 - limited to posting new entries
+- entries can not contain parenthesis, I still have to take care of input sanitization
 - currently, entries are with the "now" timestamp, it's not possible to add an entry for yesterday
 - no TLS, I leave it to Traefik or similar
 - no authentication, ditto
