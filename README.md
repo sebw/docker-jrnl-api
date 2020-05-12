@@ -39,10 +39,10 @@ $ cat /your/host/directory/journal.txt
 
 - [Telegram Bot](https://core.telegram.org/bots) and [NodeRED](https://nodered.org/) to publish new entries from the Telegram app (see nodered.json for an example)
 
-## Known limitations
+## Known limitations / Use at your own risk
 
 - limited to posting new entries
-- entries can not contain parenthesis, I still have to take care of input sanitization
+- entries can not contain parenthesis and probably other weird characters. It doesn't fail if a character is not accepted. I still have to take care of input sanitization.
 - currently, entries are with the "now" timestamp, it's not possible to add an entry for yesterday
 - no TLS, I leave it to Traefik or similar
 - no authentication, ditto
